@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./providers";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,33 +18,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kerlig - AI Writing App for Mac",
-  description: "Save hours on written communication with Kerlig, the ultimate AI writing assistant for Mac. Write faster emails, Slack replies, Jira tickets, proofread and more.",
-  keywords: ["ai writing", "mac os app", "productivity", "writing assistant", "ai writing", "email assistant", "Kerlig"],
-  authors: [{ name: "Kerlig Team" }],
-  creator: "Kerlig",
-  publisher: "Kerlig",
+  title: "Macwrite - AI Writing App for Mac",
+  description: "Save hours on written communication with macwrite, the ultimate AI writing assistant for Mac. Write faster emails, Slack replies, Jira tickets, proofread and more.",
+  keywords: ["ai writing", "mac os app", "productivity", "writing assistant", "ai writing", "email assistant", "macwrite"],
+  authors: [{ name: "macwrite Team" }],
+  creator: "Macwrite",
+  publisher: "Macwrite",
   formatDetection: {
     email: false,
     telephone: false,
   },
-  metadataBase: new URL("https://www.kerlig.com"),
+  metadataBase: new URL("https://www.macwrite.ai"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.kerlig.com",
-    title: "Kerlig - AI Writing App for Mac",
-    description: "Save hours on written communication with Kerlig, the ultimate AI writing assistant for Mac.",
-    siteName: "Kerlig",
+    url: "https://www.macwrite.ai",
+    title: "Macwrite - AI Writing App for Mac",
+    description: "Save hours on written communication with Macwrite, the ultimate AI writing assistant for Mac.",
+    siteName: "Macwrite",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Kerlig - AI Writing App for Mac",
-    description: "Save hours on written communication with Kerlig, the ultimate AI writing assistant for Mac.",
-    creator: "@kerlig",
+    title: "Macwrite - AI Writing App for Mac",
+    description: "Save hours on written communication with Macwrite, the ultimate AI writing assistant for Mac.",
+    creator: "@macwrite",
   },
 };
 
@@ -62,10 +64,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+
         <ThemeProvider attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange>{children}</ThemeProvider>
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

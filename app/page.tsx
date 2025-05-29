@@ -6,6 +6,7 @@ import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import TechSpecs from "./components/TechSpecs";
 import Contribute from "./components/contribute";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-background dark:bg-[#050505] ">
