@@ -2,10 +2,8 @@ import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Testimonials from "./components/Testimonials";
 import Pricing from "./components/Pricing";
-import Download from "./components/Download";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
-import Features from "./components/Features";
 import TechSpecs from "./components/TechSpecs";
 import Contribute from "./components/contribute";
 export default function Home() {

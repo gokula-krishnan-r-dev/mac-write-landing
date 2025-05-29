@@ -129,7 +129,7 @@ const Contribute = () => {
             </div>
             <div className="p-6 text-center py-12">
                 <p className="text-muted-foreground mb-6 text-balance max-w-prose mx-auto font-medium">
-                    We're grateful for the amazing open-source community that helps make
+                    We&rsquo;re grateful for the amazing open-source community that helps make
                     our project better every day.
                 </p>
                 <div className="flex justify-center -space-x-6 mb-8">

@@ -115,7 +115,7 @@ export default function Testimonials() {
                             </div>
 
                             <blockquote className="flex-1">
-                                <p className="text-muted-foreground mb-4">"{testimonial.text}"</p>
+                                <p className="text-muted-foreground mb-4">{testimonial.text}</p>
                             </blockquote>
 
                             <div className="mt-auto pt-4 border-t border-border">

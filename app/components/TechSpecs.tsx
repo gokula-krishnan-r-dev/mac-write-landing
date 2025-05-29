@@ -4,8 +4,6 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
-import { cn } from "@/lib/utils";
 import { Settings } from "lucide-react";
 
 interface SpecItemProps {

@@ -7,64 +7,7 @@ import { useRef } from "react";
 import { AppleIcon } from "./icons/apple";
 import Link from "next/link";
 
-const plans = [
-    {
-        id: "basic",
-        name: "Basic License",
-        price: "$47",
-        period: "/once",
-        description: "Best for users with one Mac",
-        features: [
-            "1 Mac (1 seat)",
-            "Vision, Attachments, Presets",
-            "Use your tone of voice",
-            "350+ models: OpenAI, Anthropic, Google, Groq, OpenRouter with your own API key",
-            "Ollama local models",
-            "One year of app updates",
-            "48h email support",
-        ],
-        cta: "Buy Basic License",
-        popular: false,
-    },
-    {
-        id: "pro",
-        name: "Pro License",
-        originalPrice: "$94",
-        price: "$67",
-        period: "/once",
-        description: "Best for Pro users with two Macs",
-        features: [
-            "2 Macs (2 seats)",
-            "Vision, Attachments, Presets",
-            "Use your tone of voice",
-            "350+ models: OpenAI, Anthropic, Google, Groq, OpenRouter with your own API key",
-            "Ollama local models",
-            "One year of app updates",
-            "24h email support",
-        ],
-        cta: "Buy Pro License",
-        popular: true,
-        savings: "Save $27",
-    },
-    {
-        id: "team",
-        name: "Team License",
-        price: "$297",
-        period: "/once",
-        description: "Need more seats?",
-        features: [
-            "10 Macs (10 seats)",
-            "Vision, Attachments, Presets",
-            "Use your tone of voice",
-            "350+ models with your own API key, plus Ollama local models",
-            "Remote team deployment using CLI commands",
-            "One year of app updates",
-            "Priority Zoom & email support",
-        ],
-        cta: "Buy Team License",
-        popular: false,
-    },
-];
+
 
 export default function Pricing() {
     const container = useRef<HTMLElement>(null);
@@ -121,7 +64,7 @@ export default function Pricing() {
                     </p>
                 </div>
                 <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty  sm:text-xl/8">
-                    Choose an affordable plan that’s packed with the best features for engaging
+                    Choose an affordable plan that&rsquo;s packed with the best features for engaging
                     your audience, creating customer loyalty, and driving sales.
                 </p>
                 <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
@@ -136,7 +79,7 @@ export default function Pricing() {
                             <span className="text-base text-gray-500">/once</span>
                         </p>
                         <p className="mt-6 text-base/7 text-gray-600">
-                            The perfect plan if you're just getting started with our product.
+                            The perfect plan if you&rsquo;re just getting started with our product.
                         </p>
                         <ul
                             role="list"
