@@ -56,19 +56,20 @@ export default function NavBar() {
     return (
         <header
             className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                ? "py-3 bg-background/90 dark:bg-[#050505]/90 backdrop-blur-md border-b border-border shadow-sm"
-                : "py-5"
+                ? "py-2 bg-background/90 dark:bg-[#050505]/90 backdrop-blur-md border-b border-border shadow-sm"
+                : "py-2"
                 }`}
         >
             <div className="flex  items-center justify-between px-6 py-1">
-                <div className="container max-w-7xl mx-auto px-4 flex items-center justify-between py-4">
+                <div className="container max-w-7xl mx-auto px-4 flex items-center justify-between py-0">
                     <div className="flex items-center z-50">
                         <Image
-                            src="/icon.png"
+                            src="/icon2.png"
                             alt="Kerlig AI Logo"
-                            width={120} // Adjust width as needed
-                            height={62}
+                            width={60} // Adjust width as needed
+                            height={34}
                         />
+                        <h2 className="lg:text-2xl text-white text-xl font-bold">Macwrite</h2>
                     </div>
                 </div>
 
