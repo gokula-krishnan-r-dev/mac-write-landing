@@ -1,7 +1,7 @@
 # ScribeSync
 
 <div align="center">
-  <img src="https://via.placeholder.com/200x200/E91E63/FFFFFF?text=SS" alt="ScribeSync Logo" width="120"/>
+  <img src="https://mac-write-landing.vercel.app/_next/image?url=%2Ficon.png&w=256&q=75" alt="ScribeSync Logo" width="120"/>
   
   **AI-Powered Writing Assistant for macOS**
   
@@ -57,7 +57,7 @@ ScribeSync is a revolutionary AI-powered writing assistant that seamlessly integ
 3. Click "Get" to download and install
 
 #### Option 2: Direct Download
-1. Download the latest release from our [website](https://scribesync.app)
+1. Download the latest release from our [website](https://mac-write-landing.vercel.app/)
 2. Open the `.dmg` file
 3. Drag ScribeSync to your Applications folder
 4. Launch and follow the setup wizard
@@ -180,9 +180,9 @@ ScribeSync is optimized for speed and efficiency:
 
 ### Getting Help
 - **In-App Help**: Built-in help center and tutorials
-- **Documentation**: Comprehensive guides at [docs.scribesync.app](https://docs.scribesync.app)
+- **Documentation**: Comprehensive guides at [docs.scribesync.app](https://mac-write-landing.vercel.app/)
 - **Support**: Email support@scribesync.app
-- **Community**: Join our [community forum](https://community.scribesync.app)
+- **Community**: Join our [community forum](https://mac-write-landing.vercel.app/)
 - **Feature Requests**: Submit ideas through the app or website
 
 ## 🚧 Roadmap
