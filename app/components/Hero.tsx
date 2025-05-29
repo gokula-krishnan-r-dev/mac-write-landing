@@ -288,28 +288,28 @@ export default function Hero() {
         switch (downloadState) {
             case 'idle':
                 return (
-                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 flex items-center gap-2 lg:text-lg">
+                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 flex items-center gap-2 lg:text-md">
                         <AppleIcon />
                         <span>Download for macOS</span>
                     </span>
                 );
             case 'downloading':
                 return (
-                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 flex items-center gap-2 lg:text-lg">
+                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 flex items-center gap-2 lg:text-md">
                         <Download className="animate-bounce" size={18} />
                         <span>Downloading... {downloadProgress.toFixed(0)}%</span>
                     </span>
                 );
             case 'completed':
                 return (
-                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 flex items-center gap-2 lg:text-lg">
+                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 flex items-center gap-2 lg:text-md">
                         <CheckCircle className="text-green-400 animate-pulse" size={18} />
                         <span>Download Complete!</span>
                     </span>
                 );
             case 'error':
                 return (
-                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 flex items-center gap-2 lg:text-lg">
+                    <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 flex items-center gap-2 lg:text-md">
                         <RefreshCw className="text-red-400 animate-spin" size={18} />
                         <span>Try Again</span>
                     </span>
