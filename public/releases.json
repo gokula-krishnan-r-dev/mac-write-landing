@@ -1,0 +1,17 @@
+{
+    "releases": [
+        {
+            "version": "1.0.0",
+            "date": "June 5, 2025",
+            "daysAgo": "Today",
+            "title": "Macwrite AI version 1.0.0",
+            "newFeatures": [
+                "Speed up your workflow even more by using **keyboard shortcuts** for Insert in... `V`, Copy to clipboard `C` and Regenerate `R`.",
+                "When using **OpenRouter**, the app name (Macwrite AI) is now displayed on your OpenRouter dashboard under \"Your Activity\".",
+                "Update for **Gemini 2.5 Pro** model (from 03-25 to 05-06)."
+            ],
+            "fixes": [],
+            "notes": "Welcome to Macwrite AI! We're excited to launch our first version. Thank you for being an early user!"
+        }
+    ]
+}

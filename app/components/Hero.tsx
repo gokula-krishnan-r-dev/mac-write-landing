@@ -194,13 +194,13 @@ export default function Hero() {
     // Direct app launcher function - attempts to launch with the protocol
     const launchDirectInstall = () => {
         // Download the DMG file
-        window.location.href = '/app/MacwriteAI.dmg';
+        window.location.href = '/app/kerlig-1.2.0.dmg';
         setInstallStep('protocol');
     };
 
     // Manual download function - direct download of the app
     const downloadManually = () => {
-        window.location.href = '/app/MacwriteAI.dmg';
+        window.location.href = '/app/kerlig-1.2.0.dmg';
         setInstallStep('manual');
     };
 

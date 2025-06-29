@@ -29,7 +29,7 @@ export default function Footer() {
                     <div className="">
 
                         <div className="">
-                            <Image src="/icon.png" alt="Macwrite AI" width={200} height={200} />
+                            <Image src="/icon.png" alt="Macwrite AI" width={100} className="rounded-3xl" height={100} />
                         </div>
 
                         <div className="flex flex-col items-center gap-4 lg:mt-16 lg:items-start lg:gap-9">

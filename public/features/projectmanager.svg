@@ -1,0 +1,41 @@
+<svg width="600" height="350" viewBox="0 0 600 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="350" rx="8" fill="#1A1A1A"/>
+  
+  <!-- macOS Desktop background -->
+  <rect x="50" y="30" width="500" height="290" rx="8" fill="#2A2A2A"/>
+  
+  <!-- Command+P popup overlay -->
+  <rect x="150" y="80" width="300" height="200" rx="8" fill="#252526" stroke="#444444" stroke-width="1"/>
+  
+  <!-- Search bar -->
+  <rect x="170" y="100" width="260" height="30" rx="4" fill="#3C3C3C"/>
+  <text x="200" y="120" font-family="Arial" font-size="12" fill="#CCCCCC">Search projects...</text>
+  
+  <!-- Command+P indicator -->
+  <rect x="170" y="80" width="70" height="20" rx="4" fill="#007ACC"/>
+  <text x="205" y="94" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">⌘P</text>
+  
+  <!-- Project list -->
+  <rect x="170" y="140" width="260" height="30" rx="2" fill="#094771"/>
+  <text x="190" y="160" font-family="Arial" font-size="12" fill="#FFFFFF">macwrite</text>
+  <circle cx="410" cy="155" r="6" fill="#3B82F6"/>
+  <text x="410" y="159" font-family="Arial" font-size="10" fill="#FFFFFF" text-anchor="middle">AI</text>
+  
+  <rect x="170" y="175" width="260" height="25" rx="2" fill="#3C3C3C"/>
+  <text x="190" y="192" font-family="Arial" font-size="12" fill="#CCCCCC">landing-page</text>
+  
+  <rect x="170" y="205" width="260" height="25" rx="2" fill="#3C3C3C"/>
+  <text x="190" y="222" font-family="Arial" font-size="12" fill="#CCCCCC">backend-api</text>
+  
+  <rect x="170" y="235" width="260" height="25" rx="2" fill="#3C3C3C"/>
+  <text x="190" y="252" font-family="Arial" font-size="12" fill="#CCCCCC">desktop-app</text>
+  
+  <!-- VSCode icon -->
+  <rect x="400" y="30" width="40" height="40" rx="4" fill="#007ACC"/>
+  <text x="420" y="55" font-family="Arial" font-size="20" fill="#FFFFFF" text-anchor="middle">{}</text>
+  
+  <!-- Shortcut indicator -->
+  <rect x="230" y="290" width="140" height="25" rx="12" fill="#333333" stroke="#555555" stroke-width="1"/>
+  <text x="300" y="307" font-family="Arial" font-size="12" fill="#FFFFFF" text-anchor="middle">Command + P</text>
+</svg> 
