@@ -41,7 +41,7 @@ export default function Home() {
       <Hero />
       <Features />
       <DemoVideos />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <TechSpecs />
       <Pricing />
       <Contribute />

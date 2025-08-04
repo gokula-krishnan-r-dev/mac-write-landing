@@ -69,7 +69,7 @@ export default function Footer() {
                         </div>
 
                     </div>
-                    <div className="">
+                    <div className="h-[500px]">
                         <Spline className="rounded-3xl"
                             scene="https://prod.spline.design/TkViHlZoBD5731iJ/scene.splinecode"
                         />
