@@ -58,28 +58,37 @@ export default function Pricing() {
                     />
                 </div> */}
                 <div className="mx-auto max-w-4xl text-center">
-                    <h2 className="text-base/7 font-semibold text-indigo-600">Pricing</h2>
+                    <div className="flex items-center justify-center gap-3 mb-4">
+                        <h2 className="text-base/7 font-semibold text-indigo-600">Beta Pricing</h2>
+                        <span className="bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-3 py-1 rounded-full border border-orange-300/50 shadow-lg animate-pulse">
+                            LIMITED TIME
+                        </span>
+                    </div>
                     <p className="mt-2 text-5xl font-semibold tracking-tight text-balance text-white sm:text-6xl">
-                        Choose the right plan for you
+                        Beta Tester Special Pricing
                     </p>
                 </div>
                 <p className="mx-auto mt-6 max-w-2xl text-center text-lg font-medium text-pretty  sm:text-xl/8">
-                    Choose an affordable plan that&rsquo;s packed with the best features for engaging
-                    your audience, creating customer loyalty, and driving sales.
+                    Join our beta program with exclusive early access pricing. Help shape the future of AI writing while enjoying special beta rates.
                 </p>
                 <div className="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
                     <div className="rounded-3xl rounded-t-3xl bg-white/100 p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-tr-none lg:rounded-bl-3xl">
-                        <h3 id="tier-hobby" className="text-base/7 font-semibold text-indigo-600">
-                            Basic
-                        </h3>
+                        <div className="flex items-center gap-2 mb-2">
+                            <h3 id="tier-hobby" className="text-base/7 font-semibold text-indigo-600">
+                                Beta Basic
+                            </h3>
+                            <span className="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full">
+                                FREE
+                            </span>
+                        </div>
                         <p className="mt-4 flex items-baseline gap-x-2">
                             <span className="text-5xl font-semibold tracking-tight text-gray-900">
                                 $0
                             </span>
-                            <span className="text-base text-gray-500">/once</span>
+                            <span className="text-base text-gray-500">/beta period</span>
                         </p>
                         <p className="mt-6 text-base/7 text-gray-600">
-                            The perfect plan if you&rsquo;re just getting started with our product.
+                            Get started with Macwrite AI Beta - completely free during the beta period. Perfect for trying out all features.
                         </p>
                         <ul
                             role="list"
@@ -160,20 +169,28 @@ export default function Pricing() {
                         </ShimmerButton>
                     </div>
                     <div className="relative rounded-3xl bg-gray-900 p-8 shadow-2xl ring-1 ring-gray-900/10 sm:p-10">
-                        <h3
-                            id="tier-enterprise"
-                            className="text-base/7 font-semibold text-indigo-400"
-                        >
-                            Enterprise
-                        </h3>
-                        <p className="mt-4 flex items-baseline gap-x-2">
-                            <span className="text-5xl font-semibold tracking-tight text-white">
-                                $20
+                        <div className="flex items-center gap-2 mb-2">
+                            <h3
+                                id="tier-enterprise"
+                                className="text-base/7 font-semibold text-indigo-400"
+                            >
+                                Beta Pro
+                            </h3>
+                            <span className="bg-gradient-to-r from-blue-400 to-purple-500 text-white text-xs font-semibold px-2 py-1 rounded-full">
+                                50% OFF
                             </span>
-                            <span className="text-base text-gray-400">/once</span>
+                        </div>
+                        <p className="mt-4 flex items-baseline gap-x-2">
+                            <span className="text-2xl font-semibold tracking-tight text-gray-400 line-through">
+                                $0
+                            </span>
+                            <span className="text-5xl font-semibold tracking-tight text-white">
+                                $0
+                            </span>
+                            <span className="text-base text-gray-400">/beta price</span>
                         </p>
                         <p className="mt-6 text-base/7 text-gray-300">
-                            Dedicated support and infrastructure for your company.
+                            Beta special pricing with premium features and dedicated support. Lock in this price forever as an early adopter.
                         </p>
                         <ul
                             role="list"

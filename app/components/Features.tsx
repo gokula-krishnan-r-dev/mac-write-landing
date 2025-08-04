@@ -26,6 +26,7 @@ const Features = () => {
       description: "A floating AI assistant available system-wide on macOS. Select any text from any application and instantly generate AI-powered responses or edits.",
       icon: <Sparkles className="w-5 h-5" />,
       image: "/features/macwrite.svg",
+      video: "/app/email.mov",
       highlights: [
         "Works in any application",
         "Instant AI responses",
@@ -39,6 +40,7 @@ const Features = () => {
       description: "A full end-to-end task and project management system with customizable columns like Backlog, Pending, Today, and more.",
       icon: <Clock className="w-5 h-5" />,
       image: "/features/taskmanager.svg",
+      video: "/app/todo.mov",
       highlights: [
         "Drag & drop task organization",
         "AI-powered task assistance",
@@ -46,26 +48,13 @@ const Features = () => {
         "Focus Mode with time tracking"
       ]
     },
-    {
-      id: "projectmanager",
-      title: "VSCode Project Manager",
-      description: "A smart macOS-native project manager for developers. Lists all available projects across the system, accessible via a simple shortcut.",
-      icon: <Command className="w-5 h-5" />,
-      image: "/features/projectmanager.svg",
-      highlights: [
-        "Command + P shortcut access",
-        "AI search functionality",
-        "System-wide project detection",
-        "Instant project opening"
-      ]
-    }
   ];
 
   // Auto-rotate through features
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveFeature((prev) => (prev + 1) % features.length);
-    }, 8000);
+    }, 20000);
     return () => clearInterval(interval);
   }, [features.length]);
 
@@ -179,49 +168,18 @@ const Features = () => {
                 transition={{ duration: 0.5 }}
                 className="relative h-full w-full flex flex-col"
               >
-                {/* Mockup window header */}
-                <div className="bg-black/40 p-4 border-b border-border flex items-center">
-                  <div className="flex gap-2">
-                    <div className="w-3 h-3 rounded-full bg-red-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-                    <div className="w-3 h-3 rounded-full bg-green-500"></div>
-                  </div>
-                  <div className="mx-auto text-sm text-muted-foreground">
-                    {features[activeFeature].title}
-                  </div>
-                </div>
-
+                
                 {/* Feature image */}
-                <div className="flex-1 flex items-center justify-center p-6 relative">
-                  <div className="relative w-full h-full">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <Image 
-                        src={features[activeFeature].image} 
-                        alt={features[activeFeature].title}
-                        width={600}
-                        height={350}
-                        className="object-contain max-h-[350px] rounded-lg shadow-2xl"
+                <div className="flex-1 flex items-center justify-center p-0 relative">
+                <video 
+                        src={features[activeFeature].video} 
+                        autoPlay
+                        muted
+                        width={1000}
+                        height={500}
+                        className="object-contain max-h-[500px] rounded-lg shadow-2xl"
                       />
-                    </div>
-                  </div>
-                </div>
 
-                {/* Feature highlights */}
-                <div className="bg-black/40 p-4 border-t border-border">
-                  <div className="flex flex-wrap gap-3 justify-center">
-                    {features[activeFeature].highlights.map((highlight, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0, scale: 0.8 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: i * 0.1 }}
-                        className="px-3 py-1 bg-secondary/20 rounded-full flex items-center gap-1 text-xs"
-                      >
-                        <Check className="w-3 h-3 text-primary" />
-                        <span>{highlight}</span>
-                      </motion.div>
-                    ))}
-                  </div>
                 </div>
               </motion.div>
             </AnimatePresence>

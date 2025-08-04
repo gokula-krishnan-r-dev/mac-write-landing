@@ -196,16 +196,20 @@ export default function NavBar() {
                             height={34}
                             className="rounded-xl"
                         />
-                        <h2 className="lg:text-2xl text-white text-xl font-bold">Macwrite</h2>
+                        <div className="flex items-center gap-2">
+                            <h2 className="lg:text-2xl text-white text-xl font-bold">Macwrite</h2>
+                            <span className="bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-2 py-1 rounded-full border border-orange-300/50 shadow-lg animate-pulse">
+                                BETA
+                            </span>
+                        </div>
                     </div>
                 </Link>
 
 
                 <nav className="hidden md:flex text-black dark:text-white items-center space-x-6">
-                    <Link href="/docs">Docs</Link>
-                    <Link href="/pricing">Pricing</Link>
                     <Link href="/releases">Releases</Link>
                     <Link href="/contribute">Contribute</Link>
+                    <Link href="/bug-report" className="text-orange-500 hover:text-orange-400 transition-colors">Report Bug</Link>
                     <div className="flex items-center space-x-2">
                         <ShimmerButton
                             // @ts-ignore - buttonRef is used for confetti effect
@@ -335,6 +339,20 @@ export default function NavBar() {
                             className="font-medium hover:text-accent transition-colors"
                         >
                             Contribute
+                        </Link>
+                        <Link
+                            href="/feedback"
+                            onClick={toggleMenu}
+                            className="font-medium text-blue-500 hover:text-blue-400 transition-colors"
+                        >
+                            Feedback
+                        </Link>
+                        <Link
+                            href="/bug-report"
+                            onClick={toggleMenu}
+                            className="font-medium text-orange-500 hover:text-orange-400 transition-colors"
+                        >
+                            Report Bug
                         </Link>
                         <a
                             href="#download"

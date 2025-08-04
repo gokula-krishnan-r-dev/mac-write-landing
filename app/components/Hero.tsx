@@ -290,7 +290,7 @@ export default function Hero() {
                 return (
                     <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 flex items-center gap-2 lg:text-md">
                         <AppleIcon />
-                        <span>Download for macOS</span>
+                        <span>Download Beta for macOS</span>
                     </span>
                 );
             case 'downloading':
@@ -341,9 +341,9 @@ export default function Hero() {
                         WebkitClipPath: "padding-box",
                     }}
                 />
-                🎉 <hr className="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
+                🚀 <hr className="mx-2 h-4 w-px shrink-0 bg-neutral-500" />
                 <AnimatedGradientText className="text-sm font-medium">
-                    Introducing Macwrite AI
+                    Beta Release: Macwrite AI
                 </AnimatedGradientText>
                 <ChevronRight
                     className="ml-1 size-4 stroke-neutral-500 transition-transform
@@ -352,12 +352,19 @@ duration-300 ease-in-out group-hover:translate-x-0.5"
             </div>
 
             <h1 className="bg-gradient-to-br text-center dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-5xl font-medium leading-none tracking-tighter text-transparent text-balance sm:text-6xl md:text-6xl lg:text-7xl translate-y-[-1rem] animate-fade-in opacity-100 [--animation-delay:200ms]">
-                Write Smarter with Macwrite AI. <br className="hidden md:block" /> Boost productivity with intelligent.
+                Write Smarter with Macwrite AI Beta. <br className="hidden md:block" /> Join the future of productivity.
             </h1>
 
-            <p className="mb-12 text-xs tracking-tight text-gray-400 md:text-sm text-center translate-y-[-1rem] animate-fade-in opacity-100 [--animation-delay:400ms]">
+            <p className="mb-8 text-xs tracking-tight text-gray-400 md:text-sm text-center translate-y-[-1rem] animate-fade-in opacity-100 [--animation-delay:400ms]">
                 Effortlessly write emails, respond to Slack messages, create Jira tickets, proofread content, <br className="hidden md:block" /> and chat with documents—all in one powerful AI writing assistant for macOS.
             </p>
+            
+            <div className="mb-8 p-4 bg-gradient-to-r from-orange-500/10 to-pink-500/10 border border-orange-300/30 rounded-lg backdrop-blur-sm translate-y-[-1rem] animate-fade-in opacity-100 [--animation-delay:600ms]">
+                <div className="flex items-center justify-center gap-2 text-sm text-orange-200">
+                    <span className="w-2 h-2 bg-orange-400 rounded-full animate-pulse"></span>
+                    <p className="font-medium">Beta Release - Help us improve! Your feedback shapes the future of Macwrite AI.</p>
+                </div>
+            </div>
 
             <div className="relative group">
                 {downloadState === 'downloading' && (
@@ -495,7 +502,7 @@ duration-300 ease-in-out group-hover:translate-x-0.5"
 
             <div className="py-5 flex gap-4 items-center justify-center mt-6">
                 <AvatarGroup people={avatars} numExtra={99} />
-                <h4 className="text-center text-sm text-gray-400">5k+ people write faster with Macwrite AI!</h4>
+                <h4 className="text-center text-sm text-gray-400">Join 5k+ beta testers shaping the future of AI writing!</h4>
             </div>
         </section>
     );

@@ -18,9 +18,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Macwrite - AI Writing App for Mac",
-  description: "Save hours on written communication with macwrite, the ultimate AI writing assistant for Mac. Write faster emails, Slack replies, Jira tickets, proofread and more.",
-  keywords: ["ai writing", "mac os app", "productivity", "writing assistant", "ai writing", "email assistant", "macwrite"],
+  title: "Macwrite Beta - AI Writing App for Mac",
+  description: "Join the beta! Save hours on written communication with Macwrite Beta, the ultimate AI writing assistant for Mac. Write faster emails, Slack replies, Jira tickets, proofread and more.",
+  keywords: ["ai writing", "mac os app", "productivity", "writing assistant", "ai writing", "email assistant", "macwrite", "beta", "early access"],
   authors: [{ name: "macwrite Team" }],
   creator: "Macwrite",
   publisher: "Macwrite",
@@ -36,14 +36,14 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.macwrite.ai",
-    title: "Macwrite - AI Writing App for Mac",
-    description: "Save hours on written communication with Macwrite, the ultimate AI writing assistant for Mac.",
-    siteName: "Macwrite",
+    title: "Macwrite Beta - AI Writing App for Mac",
+    description: "Join the beta! Save hours on written communication with Macwrite Beta, the ultimate AI writing assistant for Mac.",
+    siteName: "Macwrite Beta",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Macwrite - AI Writing App for Mac",
-    description: "Save hours on written communication with Macwrite, the ultimate AI writing assistant for Mac.",
+    title: "Macwrite Beta - AI Writing App for Mac",
+    description: "Join the beta! Save hours on written communication with Macwrite Beta, the ultimate AI writing assistant for Mac.",
     creator: "@macwrite",
   },
 };

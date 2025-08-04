@@ -101,7 +101,7 @@ export default function AnimatedSection({
       className={className}
     >
       {staggerChildren ? (
-        <motion.div variants={sectionVariants[animation]} className="w-full">
+        <motion.div variants={sectionVariants[animation]} className="w-full items-center justify-center flex">
           {children}
         </motion.div>
       ) : (

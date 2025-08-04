@@ -8,6 +8,10 @@ const Features = dynamic(() => import("./components/Features"), {
   ssr: false,
 });
 
+const DemoVideos = dynamic(() => import("./components/DemoVideos"), {
+  ssr: false,
+});
+
 const Testimonials = dynamic(() => import("./components/Testimonials"), {
   ssr: false,
 });
@@ -36,6 +40,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Features />
+      <DemoVideos />
       <Testimonials />
       <TechSpecs />
       <Pricing />
