@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./providers";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import FirebaseAnalytics from "./components/FirebaseAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -124,6 +125,7 @@ export default function RootLayout({
           disableTransitionOnChange>{children}</ThemeProvider>
         <Analytics />
         <SpeedInsights />
+        <FirebaseAnalytics />
       </body>
     </html>
   );

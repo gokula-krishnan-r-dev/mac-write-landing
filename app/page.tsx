@@ -58,6 +58,11 @@ const Footer = dynamic(() => import("./components/Footer"), {
   loading: ComponentLoader,
 });
 
+const ProductExplanation = dynamic(() => import("./components/ProductExplanation"), {
+  ssr: false,
+  loading: ComponentLoader,
+});
+
 export default function Home() {
   return (
     <>
@@ -94,6 +99,11 @@ export default function Home() {
         <NavBar />
         <main role="main">
           <Hero />
+          
+          {/* Product explanation video */}
+          <Suspense fallback={<ComponentLoader />}>
+            <ProductExplanation />
+          </Suspense>
           
           {/* Lazy-loaded sections with Suspense boundaries */}
           <Suspense fallback={<ComponentLoader />}>
