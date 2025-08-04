@@ -1,34 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
-import { SignJWT, jwtVerify } from "jose";
-
-const SECRET_KEY = new TextEncoder().encode(
-  process.env.JWT_SECRET || "macwrite-admin-secret-key-change-in-production"
-);
+import { generateToken, verifyToken } from "../../../../lib/auth";
 
 // Demo admin credentials - in production, use proper user management
 const ADMIN_CREDENTIALS = {
   email: "admin@macwrite.ai",
   password: "admin123", // In production, use hashed passwords
 };
-
-// Generate JWT token
-async function generateToken(email: string): Promise<string> {
-  return await new SignJWT({ email, role: "admin" })
-    .setProtectedHeader({ alg: "HS256" })
-    .setIssuedAt()
-    .setExpirationTime("24h")
-    .sign(SECRET_KEY);
-}
-
-// Verify JWT token
-export async function verifyToken(token: string): Promise<{ email: string; role: string } | null> {
-  try {
-    const { payload } = await jwtVerify(token, SECRET_KEY);
-    return payload as { email: string; role: string };
-  } catch (error) {
-    return null;
-  }
-}
 
 export async function POST(request: NextRequest) {
   try {

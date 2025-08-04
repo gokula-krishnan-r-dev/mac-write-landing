@@ -13,7 +13,7 @@ interface SpecItemProps {
 
 const SpecItem = ({ title, items }: SpecItemProps) => (
     <div className="mb-8">
-        <h3 className="text-sm uppercase tracking-wide text-muted-foreground mb-4">{title}</h3>
+        <p className="text-sm uppercase tracking-wide text-muted-foreground mb-4 font-semibold">{title}</p>
         <p className="text-sm font-medium uppercase tracking-wide">
             {items.map((item, i) => (
                 <span key={i}>
@@ -83,9 +83,9 @@ export default function TechSpecs() {
                     <h2 className="tech-title text-4xl md:text-5xl font-medium mb-4 text-white">
                         Tech Specs
                     </h2>
-                    <h3 className="tech-subtitle text-3xl md:text-4xl font-medium text-gray-100 mb-16">
+                    <p className="tech-subtitle text-3xl md:text-4xl font-medium text-gray-100 mb-16">
                         Engineered to run faster-than-light.
-                    </h3>
+                    </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-5 gap-8 mb-16">
                         <div className="md:col-span-1 tech-image">

@@ -181,13 +181,13 @@ export default function Pricing() {
                             </span>
                         </div>
                         <p className="mt-4 flex items-baseline gap-x-2">
-                            <span className="text-2xl font-semibold tracking-tight text-gray-400 line-through">
+                            <span className="text-2xl font-semibold tracking-tight text-muted-foreground line-through">
                                 $0
                             </span>
                             <span className="text-5xl font-semibold tracking-tight text-white">
                                 $0
                             </span>
-                            <span className="text-base text-gray-400">/beta price</span>
+                            <span className="text-base text-muted-foreground">/beta price</span>
                         </p>
                         <p className="mt-6 text-base/7 text-gray-300">
                             Beta special pricing with premium features and dedicated support. Lock in this price forever as an early adopter.

@@ -41,7 +41,7 @@ export default function Footer() {
                                     BETA
                                 </span>
                             </div>
-                            <p className="text-gray-400 text-sm max-w-md text-center lg:text-left mb-4">
+                            <p className="text-muted-foreground text-sm max-w-md text-center lg:text-left mb-4">
                                 Join thousands of beta testers helping us shape the future of AI writing. Your feedback drives our development!
                             </p>
                             <div className="flex flex-col sm:flex-row gap-3">

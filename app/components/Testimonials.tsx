@@ -207,7 +207,7 @@ export default function Testimonials() {
                                             </div>
                                         </div>
                                         <div>
-                                            <h4 className="font-semibold text-white">{testimonial.name}</h4>
+                                            <h3 className="font-semibold text-white">{testimonial.name}</h3>
                                             <div className="flex items-center text-sm text-muted-foreground">
                                                 <span>{testimonial.role}</span>
                                                 {testimonial.company && (

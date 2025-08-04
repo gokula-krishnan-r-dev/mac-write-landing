@@ -18,7 +18,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Macwrite Beta - AI Writing App for Mac",
+  title: {
+    default: "Macwrite Beta - AI Writing App for Mac",
+    template: "%s | Macwrite Beta"
+  },
   description: "Join the beta! Save hours on written communication with Macwrite Beta, the ultimate AI writing assistant for Mac. Write faster emails, Slack replies, Jira tickets, proofread and more.",
   keywords: ["ai writing", "mac os app", "productivity", "writing assistant", "ai writing", "email assistant", "macwrite", "beta", "early access"],
   authors: [{ name: "macwrite Team" }],
@@ -32,6 +35,22 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+  },
+  category: 'technology',
+  classification: 'Productivity Software',
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -39,12 +58,33 @@ export const metadata: Metadata = {
     title: "Macwrite Beta - AI Writing App for Mac",
     description: "Join the beta! Save hours on written communication with Macwrite Beta, the ultimate AI writing assistant for Mac.",
     siteName: "Macwrite Beta",
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Macwrite Beta - AI Writing App for Mac',
+      }
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Macwrite Beta - AI Writing App for Mac",
     description: "Join the beta! Save hours on written communication with Macwrite Beta, the ultimate AI writing assistant for Mac.",
     creator: "@macwrite",
+    images: ['/og-image.jpg'],
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Macwrite Beta',
+  },
+  other: {
+    'theme-color': '#9333EA',
+    'color-scheme': 'dark light',
+    'mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
   },
 };
 
@@ -57,9 +97,24 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/icon.png" />
+        <meta name="theme-color" content="#9333EA" />
+        <meta name="color-scheme" content="dark light" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+        <link 
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" 
+          rel="stylesheet" 
+          media="print" 
+          onLoad="this.media='all'"
+        />
+        <noscript>
+          <link 
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" 
+            rel="stylesheet" 
+          />
+        </noscript>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

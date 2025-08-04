@@ -355,7 +355,7 @@ duration-300 ease-in-out group-hover:translate-x-0.5"
                 Write Smarter with Macwrite AI Beta. <br className="hidden md:block" /> Join the future of productivity.
             </h1>
 
-            <p className="mb-8 text-xs tracking-tight text-gray-400 md:text-sm text-center translate-y-[-1rem] animate-fade-in opacity-100 [--animation-delay:400ms]">
+            <p className="mb-8 text-xs tracking-tight text-muted-foreground md:text-sm text-center translate-y-[-1rem] animate-fade-in opacity-100 [--animation-delay:400ms]">
                 Effortlessly write emails, respond to Slack messages, create Jira tickets, proofread content, <br className="hidden md:block" /> and chat with documents—all in one powerful AI writing assistant for macOS.
             </p>
             
@@ -418,7 +418,7 @@ duration-300 ease-in-out group-hover:translate-x-0.5"
                                 </div>
                                 <div>
                                     <p className="font-medium">DMG file is downloading</p>
-                                    <p className="text-gray-400">Check your Downloads folder for MacwriteAI.dmg</p>
+                                    <p className="text-muted-foreground">Check your Downloads folder for MacwriteAI.dmg</p>
                                 </div>
                             </div>
 
@@ -502,7 +502,7 @@ duration-300 ease-in-out group-hover:translate-x-0.5"
 
             <div className="py-5 flex gap-4 items-center justify-center mt-6">
                 <AvatarGroup people={avatars} numExtra={99} />
-                <h4 className="text-center text-sm text-gray-400">Join 5k+ beta testers shaping the future of AI writing!</h4>
+                <p className="text-center text-sm text-muted-foreground font-medium">Join 5k+ beta testers shaping the future of AI writing!</p>
             </div>
         </section>
     );

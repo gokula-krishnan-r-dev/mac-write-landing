@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Optimize crawling
+Sitemap: https://www.macwrite.ai/sitemap.xml
+
+# Block unnecessary pages
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Allow important assets
+Allow: /app/Macwrite.dmg
+Allow: /public/
+Allow: /icon.png
+Allow: /favicon.svg
+
+# Crawl delay for better server performance
+Crawl-delay: 1

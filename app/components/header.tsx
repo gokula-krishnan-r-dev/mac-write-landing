@@ -197,7 +197,7 @@ export default function NavBar() {
                             className="rounded-xl"
                         />
                         <div className="flex items-center gap-2">
-                            <h2 className="lg:text-2xl text-white text-xl font-bold">Macwrite</h2>
+                            <span className="lg:text-2xl text-white text-xl font-bold">Macwrite</span>
                             <span className="bg-gradient-to-r from-orange-400 to-pink-500 text-white text-xs font-semibold px-2 py-1 rounded-full border border-orange-300/50 shadow-lg animate-pulse">
                                 BETA
                             </span>

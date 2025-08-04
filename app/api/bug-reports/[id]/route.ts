@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { readFile, writeFile } from "fs/promises";
 import path from "path";
-import { verifyToken } from "../../admin/auth/route";
+import { verifyToken } from "../../../../lib/auth";
 
 interface BugReport {
   id: string;
