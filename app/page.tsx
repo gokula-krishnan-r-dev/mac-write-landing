@@ -18,6 +18,11 @@ const Features = dynamic(() => import("./components/Features"), {
   loading: ComponentLoader,
 });
 
+const FeatureShowcase = dynamic(() => import("./components/FeatureShowcase"), {
+  ssr: false,
+  loading: ComponentLoader,
+});
+
 const DemoVideos = dynamic(() => import("./components/DemoVideos"), {
   ssr: false,
   loading: ComponentLoader,
@@ -95,8 +100,12 @@ export default function Home() {
             <Features />
           </Suspense>
           
+       
           <Suspense fallback={<ComponentLoader />}>
             <DemoVideos />
+          </Suspense>
+          <Suspense fallback={<ComponentLoader />}>
+            <FeatureShowcase />
           </Suspense>
           
           {/* <Suspense fallback={<ComponentLoader />}>

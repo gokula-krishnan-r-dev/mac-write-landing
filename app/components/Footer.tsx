@@ -128,7 +128,7 @@ export default function Footer() {
                 {/* Bottom Spline Section */}
                 <div className="mt-12 lg:mt-16">
                     <div className="rounded-2xl sm:rounded-3xl overflow-hidden">
-                        <div className="h-[200px] sm:h-[300px] md:h-[400px] lg:h-[500px]">
+                        <div className="h-[200px] sm:h-[300px] md:h-[400px] lg:h-[800px]">
                             <Spline 
                                 className="w-full h-full"
                                 scene="https://prod.spline.design/duMVrLGKLLXNIqbG/scene.splinecode"
